@@ -1,0 +1,77 @@
+.promo {
+    position: relative;
+    min-height: 738px;
+    &::before {
+        content: '';
+        position: absolute;
+        top: -117px;
+        width: 688px;
+        height: 842px;
+        background: url('../../assets/backgrounds/inNUmbers.png') no-repeat left;
+        z-index: -1;
+    }
+    
+    &__wrapper {
+        position: relative;
+        display: grid;
+        min-height: 588px;
+        grid-template-columns: 550px 770px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__title {
+        position: absolute;
+        grid-column-start: 1;
+        top: 55px;
+        left: 10px;
+        color: #2D2B5C;
+        font-size: 70px;
+        font-family: 'Poppins';
+        &::before {
+            content: 'SINCE 2019';
+            position: absolute;
+            left: 4px;
+            color: #2D2B5C;
+            font-size: 17px;
+            font-family: 'Poppins';
+
+
+        }
+    }
+
+    &__content {
+        padding-top: 110px;
+        grid-column-start: 2;
+        align-items: center;
+    }
+    
+    &__category {
+        display: grid;
+        grid-template-rows: repeat(3, auto);
+        row-gap: 28px;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        border-top: 1px solid #E7E5FF;
+        &_title {
+            font-size: 30px;
+            color: #1a1930;
+        }
+        &_descr {
+            display: grid;
+            grid-row-start: 2;
+        }
+        &_achivment {
+            display: grid;
+            grid-row-start: 1;
+            grid-column-start: 2;
+            grid-row-end: 4;
+            text-align: end;
+            font-size: 80px;
+            color: #2D2B5C;
+        }
+    }
+}
