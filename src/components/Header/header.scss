@@ -1,10 +1,21 @@
 .header {
     position: relative;
     min-height: 900px;
-    padding-top: 26px;
-    background: url('../../assets/backgrounds/headerBG.png') no-repeat right;
+    &::before {
+        content: '';
+        right: 10px;
+        width: 850px; /* Ширина больше контейнера */
+        height: 962px; /* Высота больше контейнера */
+        position: absolute;
+        background: url('../../assets/backgrounds/headerBG.png') no-repeat right;
+        
+    }
+   
     &__wrapper {
+        position: absolute;
+        z-index: 1;
         display: grid;
+        padding-top: 26px;
         grid-template-columns: 392px 655px 392px;
         align-items: center;
         justify-content: center;
