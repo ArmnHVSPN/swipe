@@ -1,4 +1,5 @@
 
+import { Features } from '../Features/Features'
 import { Header } from '../Header/Header'
 import { Promo } from '../Promo/Promo'
 import { Slider } from '../Slider/Slider'
@@ -11,6 +12,7 @@ function App() {
       <Header/>
       <Slider/>
       <Promo/>
+      <Features/>
     </>
   )
 }
