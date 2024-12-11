@@ -1,0 +1,23 @@
+.slider {
+    overflow: hidden;
+    &__wrapper {
+        position: relative;
+        z-index: -1;
+        width: 1440px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 180px;
+        background-color: rgba($color: #1A1930, $alpha: 0.1);
+    }
+    &__slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+    }
+}
+

@@ -1,0 +1,61 @@
+.header {
+    position: relative;
+    min-height: 900px;
+    &::before {
+        content: '';
+        right: 10px;
+        width: 850px; /* Ширина больше контейнера */
+        height: 962px; /* Высота больше контейнера */
+        position: absolute;
+        background: url('../../assets/backgrounds/headerBG.png') no-repeat right;
+        
+    }
+   
+    &__wrapper {
+        position: absolute;
+        z-index: 1;
+        display: grid;
+        padding-top: 26px;
+        grid-template-columns: 392px 655px 392px;
+        align-items: center;
+        justify-content: center;
+    }
+    &__logo {
+        padding-left: 70px;
+    }
+    
+    &__navigation {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        &_link {
+            color: #1A1930;
+            text-decoration: none;
+            font-size: 18px;
+            font-family: Prompt;
+            font-weight: 400;
+        }
+    }
+
+    &__right {
+        position: relative;
+        width: 392px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+    }
+
+    &__btn {
+        position: absolute;
+        right: 75px;
+        width: 139px;
+        height: 59px;
+        font-size: 16px;
+        font-weight: 500;
+        color: #1A1930;
+        background-color: rgba($color: #fff, $alpha: 0.5);
+        border-radius: 6px;
+        border: 1px solid #fff;
+    }
+}
